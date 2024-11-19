@@ -13,3 +13,6 @@ _output/
 .idea/
 *.iml
 *.swp
+
+# Nix build product
+result*
