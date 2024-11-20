@@ -26,7 +26,9 @@
           src = ./.;
           modRoot = "./cmd";
 
-          vendorHash = "sha256-d7LRpZelHq8VJYhfziyY7SYxx0kZUYFPsPHJ/0DGTO0=";
+          #vendorHash = lib.fakeHash;
+          vendorHash = "sha256-nX0hFaRv6J6eAaX9dCOsFy7VcRcR8QFw7/HLgw/0xDw=";
+          #vendorHash = "sha256-sCrPcsrE6r5WrM1YTd+xL2kvMJuGOMkck4pYcmUnf+I=";
 
           ldflags = [
             "-s"
