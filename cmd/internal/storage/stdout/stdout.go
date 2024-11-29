@@ -58,7 +58,7 @@ const (
 	// Size of memory mapped files in bytes
 	serMemoryMappedFile string = "memory_mapped_file"
 	// Size of socket memory in bytes
-	serMemorySocket string = "memory_socket_memory"
+	serMemorySocket string = "memory_socket"
 	// Working set size
 	serMemoryWorkingSet string = "memory_working_set"
 	// Total active file

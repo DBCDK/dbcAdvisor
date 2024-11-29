@@ -16,3 +16,9 @@ _output/
 
 # Nix build product
 result*
+
+# ast-grep
+rules
+rule-tests/
+sgconfig.yml
+utils/.gitkeep
