@@ -58,7 +58,7 @@ const (
 	// Size of memory mapped files in bytes
 	serMemoryMappedFile string = "memory_mapped_file"
 	// Size of socket memory in bytes
-	serMemorySocketMemory string = "memory_socket_memory"
+	serMemorySocket string = "memory_socket_memory"
 	// Working set size
 	serMemoryWorkingSet string = "memory_working_set"
 	// Total active file
@@ -169,7 +169,7 @@ func (driver *stdoutStorage) memoryStatsToValues(series *map[string]uint64, stat
 	// Size of memory mapped files in bytes
 	(*series)[serMemoryMappedFile] = stats.Memory.MappedFile
 	// Size of socket memory in bytes
-	(*series)[serMemorySocketMemory] = stats.Memory.SocketMemory
+	(*series)[serMemorySocket] = stats.Memory.SocketMemory
 	// Working Set Size
 	(*series)[serMemoryWorkingSet] = stats.Memory.WorkingSet
 	// Total Active File

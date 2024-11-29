@@ -69,7 +69,7 @@ const (
 	// Size of memory mapped files in bytes
 	serMemoryMappedFile string = "memory_mapped_file"
 	// Size of socket memory in bytes
-	serMemorySocketMemory string = "memory_socket_memory"
+	serMemorySocket string = "memory_socket_memory"
 	// Working set size
 	serMemoryWorkingSet string = "memory_working_set"
 	// Total active file size
@@ -261,7 +261,7 @@ func (s *influxdbStorage) memoryStatsToPoints(
 	// Size of memory mapped files in bytes
 	points = append(points, makePoint(serMemoryMappedFile, stats.Memory.MappedFile))
 	// Size of socket memory in bytes
-	points = append(points, makePoint(serMemorySocketMemory, stats.Memory.SocketMemory))
+	points = append(points, makePoint(serMemorySocket, stats.Memory.SocketMemory))
 	// Working Set Size
 	points = append(points, makePoint(serMemoryWorkingSet, stats.Memory.WorkingSet))
 	// Total Active File Size
