@@ -392,7 +392,7 @@ type MemoryStats struct {
 
 	// The amount of kernel memory used by the sockets spawned by the process.
 	// Units: Bytes.
-	SocketMemory uint64 `json:"socket_memory"`
+	Socket uint64 `json:"socket_memory"`
 
 	// The amount of working set memory, this includes recently accessed memory,
 	// dirty memory, and kernel memory. Working set is <= "usage".

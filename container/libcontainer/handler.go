@@ -799,7 +799,7 @@ func setMemoryStats(s *cgroups.Stats, ret *info.ContainerStats) {
 	ret.Memory.MaxUsage = s.MemoryStats.Usage.MaxUsage
 	ret.Memory.Failcnt = s.MemoryStats.Usage.Failcnt
 	ret.Memory.KernelUsage = s.MemoryStats.KernelUsage.Usage
-	ret.Memory.SocketMemory = s.MemoryStats.Stats["sock"]
+	ret.Memory.Socket = s.MemoryStats.Stats["sock"]
 	fmt.Println(s.MemoryStats.Stats)
 
 	if cgroups.IsCgroup2UnifiedMode() {

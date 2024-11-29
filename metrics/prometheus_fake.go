@@ -356,7 +356,7 @@ func (p testSubcontainersInfoProvider) GetRequestedContainersInfo(string, v2.Req
 						Cache:        14,
 						RSS:          15,
 						MappedFile:   16,
-						SocketMemory: 16,
+						Socket:       16,
 						KernelUsage:  17,
 						Swap:         8192,
 					},

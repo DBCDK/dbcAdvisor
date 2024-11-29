@@ -403,7 +403,7 @@ func NewPrometheusCollector(i infoProvider, f ContainerLabelsFunc, includedMetri
 				help:      "Size of kernel memory allocated by sockets.",
 				valueType: prometheus.GaugeValue,
 				getValues: func(s *info.ContainerStats) metricValues {
-					return metricValues{{value: float64(s.Memory.SocketMemory), timestamp: s.Timestamp}}
+					return metricValues{{value: float64(s.Memory.Socket), timestamp: s.Timestamp}}
 				},
 			}, {
 				name:      "container_memory_swap",

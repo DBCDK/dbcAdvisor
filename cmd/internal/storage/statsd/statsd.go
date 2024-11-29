@@ -164,7 +164,7 @@ func (s *statsdStorage) memoryStatsToValues(series *map[string]uint64, stats *in
 	// Size of memory mapped files in bytes
 	(*series)[serMemoryMappedFile] = stats.Memory.MappedFile
 	// Size of socket memory in bytes.
-	(*series)[serMemorySocket] = stats.Memory.SocketMemory
+	(*series)[serMemorySocket] = stats.Memory.Socket
 	// Working Set Size
 	(*series)[serMemoryWorkingSet] = stats.Memory.WorkingSet
 	// Total Active File Size
