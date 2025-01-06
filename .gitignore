@@ -22,3 +22,6 @@ rules
 rule-tests/
 sgconfig.yml
 utils/.gitkeep
+
+# envrc
+.direnv/

@@ -5,6 +5,7 @@
   };
   outputs =
     {
+      self,
       nixpkgs,
       flake-utils,
       ...
@@ -17,8 +18,12 @@
         };
 
         inherit (pkgs) lib;
-      in
+      in rec
       {
+        devShells.default = pkgs.mkShell {
+          buildInputs = [ pkgs.cmake ] ++ self.packages.${system}.default.buildInputs;
+          nativeBuildInputs = self.packages.${system}.default.nativeBuildInputs;
+        };
         packages.default = pkgs.buildGoModule rec {
           pname = "cadvisor";
           version = "0.49.1";
