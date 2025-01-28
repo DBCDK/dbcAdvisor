@@ -13,3 +13,15 @@ _output/
 .idea/
 *.iml
 *.swp
+
+# Nix build product
+result*
+
+# ast-grep
+rules
+rule-tests/
+sgconfig.yml
+utils/.gitkeep
+
+# envrc
+.direnv/
